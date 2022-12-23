@@ -20,6 +20,12 @@ const options = yargs
     describe: 'Max number of characters in result you want to return. Default is 300."',
     type: "number",
     demandOption: false,
+  })
+  .option("t", {
+    alias: "temperature",
+    describe: 'Decide temperature between 0 and 1. Default is 0."',
+    type: "number",
+    demandOption: false,
   }).argv;
 
 const config = new Configuration({
@@ -29,7 +35,7 @@ const openai = new OpenAIApi(config);
 const response = await openai.createCompletion({
   model: "code-davinci-002",
   prompt: options.query,
-  temperature: 0,
+  temperature: options.temperature || 0,
   max_tokens: options.max_tokens || 300,
   top_p: 1,
   frequency_penalty: 0.5,

@@ -20,6 +20,9 @@
   },
   "dependencies": {
     "axios": "^1.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0",
     "yargs": "^13.2"
   }
 }

@@ -1,7 +1,8 @@
 Steps to install and use:
 
 1. Get the api key from chatgpt website and in User path variables create and set the **user variable** name as "OPENAI_API_KEY" with value API_KEY you got from https://beta.openai.com/account/api-keys.
-2. Go to the project and type the following commands -
+2. Do `pip install openai` globally and then in the project environment, install the packages in package.json using `npm i`.
+3. Go to the project and type the following commands -
 
 - `node .`
 - `npm install -g .` (installs it globally as program)

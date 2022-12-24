@@ -10,8 +10,10 @@ Steps to install and use:
 3. Now this is installed globally and type "chatgpt -q 'your question' -m max_tokens" to get answers from chatgpt
    Note only "-q" tag is necessary and others can be avoided
 
-Example - 
+Examples - 
 
 ![image](https://user-images.githubusercontent.com/56734311/209431679-de546720-0adb-4ad2-bed3-ef4cc392ee78.png)
+![image](https://user-images.githubusercontent.com/56734311/209432301-69b48eb1-2d6f-4dbe-b2a8-600abb689f77.png)
+
 
 Note - this uses codex **code-davinci-002** which has it's set of limitations and is used bcos right now there is no upper limit on it's use. If you wish to use others(if you have credits left), you can replace the word **code-davinci-002** in index.js file with other ones.

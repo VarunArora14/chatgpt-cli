@@ -8,7 +8,7 @@ import { Configuration, OpenAIApi } from "openai";
 dotenv.config();
 
 const options = yargs
-  .usage("Usage: -q <query>")
+  .usage("Uses codex code-davinci-002 as it is in closed beta with unlimited tries.")
   .option("q", {
     alias: "query",
     describe: 'Your question in double quotes like "What is the meaning of life?"',
@@ -17,13 +17,13 @@ const options = yargs
   })
   .option("m", {
     alias: "max_tokens",
-    describe: 'Max number of characters in result you want to return. Default is 300."',
+    describe: "Max number of characters in result you want to return. Default is 300.",
     type: "number",
     demandOption: false,
   })
   .option("t", {
     alias: "temperature",
-    describe: 'Decide temperature between 0 and 1. Default is 0."',
+    describe: "Decide temperature between 0 and 1. Default is 0.",
     type: "number",
     demandOption: false,
   }).argv;

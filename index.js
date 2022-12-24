@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import yargs from "yargs";
-// import cors from "cors";
 import * as dotenv from "dotenv";
 import { Configuration, OpenAIApi } from "openai";
 
@@ -42,9 +41,5 @@ const response = await openai.createCompletion({
   presence_penalty: 0,
 });
 console.log("response", response.data.choices[0].text);
-
-// const greeting = `Hello, ${options.query}`;
-
-// console.log(greeting);
 
 // https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs
